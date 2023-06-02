@@ -14,7 +14,11 @@ class NeuralNetwork
         virtual ~NeuralNetwork();
         void Computation(double* input);
         void Computation(double* input, double* expected_output);
-        void GetOutput(double* output);
+        void StoreInput(double* input);
+        void LoadOutput(double* output);
+        //void GetOutput(double* output);
+        double Loss(double* expected_output);
+        void LossDerivative(double* expected_output, double* gradient);
 
     protected:
 
@@ -22,8 +26,13 @@ class NeuralNetwork
         Neuron** neurons;
         uint* structure; // inputs & neural layers
         uint num_layers;
+        //uint total_num_neurons;
+        uint total_num_weights;
         double (**activation)(double);
         double (**activationDerivative)(double);
+
+        uint max_output_width;
+        double* workspace;
 
 };
 

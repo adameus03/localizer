@@ -58,3 +58,9 @@ void Neuron::StoreInput(double* buffer){
 void Neuron::LoadOutput(double* buffer){
     memcpy(buffer, output_buffer, output_width*sizeof(double));
 }
+
+void Neuron::AdjustWeights(double* d_weights){
+    for(uint i=0x0; i<this->num_inputs; i++){
+        this->weights[i] += d_weights[i];
+    }
+}

@@ -16,6 +16,7 @@ class Neuron
         void Process();
         void StoreInput(double* buffer);
         void LoadOutput(double* buffer);
+        void AdjustWeights(double* d_weights);
 
     protected:
 
