@@ -64,3 +64,7 @@ void Neuron::AdjustWeights(double* d_weights){
         this->weights[i] += d_weights[i];
     }
 }
+
+uint Neuron::GetNumInputs(){
+    return this->num_inputs;
+}

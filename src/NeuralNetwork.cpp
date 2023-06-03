@@ -17,7 +17,7 @@ NeuralNetwork::NeuralNetwork(uint* structure, const uint& num_layers, double (**
         total_num_neurons += this->structure[i+1];
         total_num_weights += this->structure[i] * this->structure[i+1];
     }
-    //this->total_num_neurons = total_num_neurons;
+    this->total_num_neurons = total_num_neurons;
     this->total_num_weights = total_num_weights;
     this->neurons = new Neuron*[total_num_neurons];
     uint neuron_index = 0;
@@ -55,6 +55,9 @@ NeuralNetwork::~NeuralNetwork()
     delete[] this->workspace;
     delete[] this->activation;
     delete[] this->activationDerivative;
+    if(this->grad_buffer){
+        delete[] this->grad_buffer;
+    }
 }
 
 void NeuralNetwork::Computation(double* input){
@@ -87,9 +90,27 @@ void NeuralNetwork::Computation(double* input){
         neuron_index++;
     }
 }
-
-void NeuralNetwork::Computation(double* input, double* expected_output){
+// first call AllocateGradient
+void NeuralNetwork::Computation(double* input, double* expected_output, const double& adjustment_size){
     this->Computation(input);
+    this->LossDerivative(expected_output, this->grad_buffer);
+
+    double grad_mag = 0;
+    for(uint i=0x0; i<this->total_num_weights; i++){
+        grad_mag += grad_buffer[i]*grad_buffer[i];
+    }
+    grad_mag = sqrt(grad_mag);
+
+    for(uint i=0x0; i<this->total_num_weights; i++){
+        grad_buffer[i] /= grad_mag;
+        grad_buffer[i] *= -adjustment_size;
+    }
+
+    double* grad_head = grad_buffer;
+    for(uint i=0x0; i<this->total_num_neurons; i++){
+        this->neurons[i]->AdjustWeights(grad_head);
+        grad_head += this->neurons[i]->GetNumInputs();
+    }
 
 }
 
@@ -132,8 +153,22 @@ void NeuralNetwork::LossDerivative(double* expected_output, double* gradient){
     }
 }
 
+void NeuralNetwork::AllocateGradient(){
+    this->grad_buffer = new double[this->total_num_weights];
+    memset(this->grad_buffer, 0, this->total_num_weights*sizeof(double)); //?
+}
 
+void NeuralNetwork::DeallocateGradient(){
+    delete[] this->grad_buffer;
+}
 
+uint* NeuralNetwork::GetStructure(){
+    return this->structure;
+}
+
+uint NeuralNetwork::GetNumLayers(){
+    return this->num_layers;
+}
 
 
 //How about creating your own filesystem?
