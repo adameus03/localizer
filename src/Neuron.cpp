@@ -38,21 +38,22 @@ void Neuron::RandomizeWeights(){
 }
 // "output_width" = input_width + num_inputs("num_weights")
 void Neuron::Process(){
-
+    memset(output_buffer, 0, output_width*sizeof(double)); //!!!
     for(uint i=0x0; i<num_inputs; i++){
         for(uint j=0x0; j<input_width; j++){
             output_buffer[j] += weights[i]*input_buffer[i*input_width+j];
         }
-        output_buffer[input_width+0x1+head_index+i] = input_buffer[i*input_width];
+        output_buffer[input_width/*+0x1*/+head_index+i] = input_buffer[i*input_width];
     }
     double activation_value = activation(output_buffer[0]);
     for(uint i=0x1; i<input_width; i++){
         output_buffer[i] *= activationDerivative(output_buffer[0]);
     }
+    output_buffer[0] = activation_value;
 }
 
 void Neuron::StoreInput(double* buffer){
-    memcpy(buffer, input_buffer, num_inputs*input_width*sizeof(double));
+    memcpy(input_buffer, buffer, num_inputs*input_width*sizeof(double));
 }
 
 void Neuron::LoadOutput(double* buffer){
@@ -63,6 +64,14 @@ void Neuron::AdjustWeights(double* d_weights){
     for(uint i=0x0; i<this->num_inputs; i++){
         this->weights[i] += d_weights[i];
     }
+}
+
+void Neuron::PutWeights(double* weights){
+    memcpy(this->weights, weights, this->num_inputs*sizeof(double));
+}
+
+void Neuron::GetWeights(double* weights){
+    memcpy(weights, this->weights, this->num_inputs*sizeof(double));
 }
 
 uint Neuron::GetNumInputs(){

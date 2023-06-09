@@ -16,6 +16,8 @@ class Neuron
         void Process();
         void StoreInput(double* buffer);
         void LoadOutput(double* buffer);
+        void PutWeights(double* weights);
+        void GetWeights(double* weights);
         void AdjustWeights(double* d_weights);
         uint GetNumInputs();
 

@@ -4,6 +4,7 @@
 #include "NeuralNetwork.h"
 #include <iostream> //verbose
 
+typedef unsigned char uchar;
 
 class NeuralNetworkTrainer
 {

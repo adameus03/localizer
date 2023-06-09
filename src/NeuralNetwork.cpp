@@ -28,7 +28,7 @@ NeuralNetwork::NeuralNetwork(uint* structure, const uint& num_layers, double (**
         output_width = input_width_accumulator + this->structure[i]*this->structure[i+1];
         for(uint j=0; j<this->structure[i+1]; j++){
 
-            this->neurons[neuron_index] = new Neuron(this->structure[i], input_width_accumulator, this->activation[i], this->activationDerivative[i], j*this->structure[i], output_width);
+            this->neurons[neuron_index] = new Neuron(this->structure[i], input_width_accumulator, this->activation[i], this->activationDerivative[i], j*/*input_width_accumulator*/this->structure[i], output_width);
             neuron_index++;
 
         }
@@ -43,24 +43,24 @@ NeuralNetwork::NeuralNetwork(uint* structure, const uint& num_layers, double (**
         }
     }
 
-    uint workspace_size = this->max_output_width * max_layer_size;
-    this->workspace = new double[workspace_size];
+    this->workspace_size = this->max_output_width * max_layer_size;
+    this->workspace = new double[this->workspace_size];
     memset(this->workspace, 0, workspace_size*sizeof(double));
 }
 
 NeuralNetwork::~NeuralNetwork()
 {
     //dtor
-    delete[] this->neurons;
+    /*delete[] this->neurons;
     delete[] this->workspace;
     delete[] this->activation;
     delete[] this->activationDerivative;
     if(this->grad_buffer){
         delete[] this->grad_buffer;
-    }
+    }*/
 }
 
-void NeuralNetwork::Computation(double* input){
+void NeuralNetwork::Computation(/*double* input*/){
     uint neuron_index = 0;
     uint input_width_accumulator = 1;
     uint output_width;
@@ -76,7 +76,7 @@ void NeuralNetwork::Computation(double* input){
         uint temp_neuron_index = neuron_index;
 
         for(uint j=0x0; j<this->structure[i+2]; j++){
-            this->neurons[neuron_index]->StoreInput(this->workspace+output_width*j);
+            this->neurons[neuron_index]->StoreInput(this->workspace/*+output_width*j*/);
             neuron_index++;
         }
 
@@ -84,6 +84,7 @@ void NeuralNetwork::Computation(double* input){
         input_width_accumulator = output_width;
     }
 
+    output_width = input_width_accumulator + this->structure[num_layers-0x1]*this->structure[num_layers];
     for(uint j=0x0; j<this->structure[this->num_layers]; j++){
         this->neurons[neuron_index]->Process();
         this->neurons[neuron_index]->LoadOutput(this->workspace+output_width*j);
@@ -91,15 +92,27 @@ void NeuralNetwork::Computation(double* input){
     }
 }
 // first call AllocateGradient
-void NeuralNetwork::Computation(double* input, double* expected_output, const double& adjustment_size){
-    this->Computation(input);
+void NeuralNetwork::ImproveAfterComputation(/*double* input, */double* expected_output, const double& adjustment_size){
+    //this->Computation(/*input*/);
     this->LossDerivative(expected_output, this->grad_buffer);
+
+
+    std::cout << "grad: ";
+    for(uint i=0x0; i<this->total_num_weights; i++){
+        std::cout << this->grad_buffer[i] << " ";
+    }
+    std::cout << std::endl;
+
+
+
 
     double grad_mag = 0;
     for(uint i=0x0; i<this->total_num_weights; i++){
         grad_mag += grad_buffer[i]*grad_buffer[i];
     }
     grad_mag = sqrt(grad_mag);
+
+    if(grad_mag == 0 ) grad_mag = 1; //
 
     for(uint i=0x0; i<this->total_num_weights; i++){
         grad_buffer[i] /= grad_mag;
@@ -140,7 +153,7 @@ double NeuralNetwork::Loss(double* expected_output){
     return sum;
 }
 
-void NeuralNetwork::LossDerivative(double* expected_output, double* gradient){
+void NeuralNetwork::LossDerivative(double* expected_output, double* gradient){ /* BUGGED */
     double sum;
     double difference;
     for(uint i=0x0; i<this->total_num_weights; i++){
@@ -159,7 +172,7 @@ void NeuralNetwork::AllocateGradient(){
 }
 
 void NeuralNetwork::DeallocateGradient(){
-    delete[] this->grad_buffer;
+    //delete[] this->grad_buffer;
 }
 
 uint* NeuralNetwork::GetStructure(){
@@ -168,6 +181,30 @@ uint* NeuralNetwork::GetStructure(){
 
 uint NeuralNetwork::GetNumLayers(){
     return this->num_layers;
+}
+
+void NeuralNetwork::PutWeights(double* weights){
+    double* weights_head = weights;
+    for(uint i=0x0; i<this->total_num_neurons; i++){
+        this->neurons[i]->PutWeights(weights_head);
+        weights_head += this->neurons[i]->GetNumInputs();
+    }
+}
+
+void NeuralNetwork::GetWeights(double* weights){
+    double* weights_head = weights;
+    for(uint i=0x0; i<this->total_num_neurons; i++){
+        this->neurons[i]->GetWeights(weights_head);
+        weights_head += this->neurons[i]->GetNumInputs();
+    }
+}
+
+void NeuralNetwork::GetWorkspace(double* workspace){
+    memcpy(workspace, this->workspace, this->workspace_size*sizeof(double));
+}
+
+uint NeuralNetwork::GetWorkspaceSize(){
+    return this->workspace_size;
 }
 
 
