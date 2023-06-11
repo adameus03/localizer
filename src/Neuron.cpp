@@ -28,13 +28,19 @@ Neuron::~Neuron()
 }
 
 void Neuron::RandomizeWeights(){
-    double val;
+    /*double val;
     double pool_width = 1;
     for(uint i=0; i<this->num_inputs; i++){
         val = pool_width * (((double)rand())/((double)RAND_MAX));
         this->weights[i] = val;
         pool_width -= val;
+    }*/
+    for(uint i=0; i<this->num_inputs; i++){
+        //val = pool_width * (((double)rand())/((double)RAND_MAX));
+        this->weights[i] = -1.0 + 2.0*(((double)rand())/((double)RAND_MAX));
+        //pool_width -= val;
     }
+
 }
 // "output_width" = input_width + num_inputs("num_weights")
 void Neuron::Process(){

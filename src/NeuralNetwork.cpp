@@ -97,11 +97,11 @@ void NeuralNetwork::ImproveAfterComputation(/*double* input, */double* expected_
     this->LossDerivative(expected_output, this->grad_buffer);
 
 
-    std::cout << "grad: ";
+    /*std::cout << "grad: ";
     for(uint i=0x0; i<this->total_num_weights; i++){
         std::cout << this->grad_buffer[i] << " ";
     }
-    std::cout << std::endl;
+    std::cout << std::endl;*/
 
 
 
@@ -207,5 +207,8 @@ uint NeuralNetwork::GetWorkspaceSize(){
     return this->workspace_size;
 }
 
+uint NeuralNetwork::GetTotalNumWeights(){
+    return this->total_num_weights;
+}
 
 //How about creating your own filesystem?

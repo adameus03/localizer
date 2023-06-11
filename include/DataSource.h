@@ -13,6 +13,9 @@ class DataSource
         DataSource(const char* path);
         virtual ~DataSource();
         double* GetData(ull& num_samples);
+        void GetBatch(double* batch, ull index, ull batch_size);
+        ull GetSize();
+
 
     protected:
 

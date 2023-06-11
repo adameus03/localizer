@@ -30,8 +30,7 @@ DataSource::~DataSource()
 }*/
 
 double* DataSource::GetData(ull& num_samples){
-
-std::ifstream f_in(this->path, std::ifstream::binary);
+    std::ifstream f_in(this->path, std::ifstream::binary);
     std::filebuf* f_in_pbuf = f_in.rdbuf();
     size_t sbuff_size = f_in_pbuf->pubseekoff(0, f_in.end, f_in.in);
     f_in_pbuf->pubseekpos(0, f_in.in);
@@ -49,4 +48,25 @@ std::ifstream f_in(this->path, std::ifstream::binary);
     f_in.close();
     num_samples = (sbuff_size>>4);
     return buffer;
+}
+
+void DataSource::GetBatch(double* batch, ull index, ull batch_size){
+    std::ifstream f_in(this->path, std::ifstream::binary);
+    std::filebuf* f_in_pbuf = f_in.rdbuf();
+    size_t sbuff_size = f_in_pbuf->pubseekoff(0, f_in.end, f_in.in);
+    f_in_pbuf->pubseekpos(index<<0x3, f_in.in);
+
+
+    f_in_pbuf->sgetn(reinterpret_cast<char*>(batch), batch_size<<0x3);
+    f_in.close();
+    //num_samples = (sbuff_size>>4);
+    //return buffer;
+}
+
+ull DataSource::GetSize(){
+    std::ifstream f_in(this->path, std::ifstream::binary);
+    std::filebuf* f_in_pbuf = f_in.rdbuf();
+    size_t sbuff_size = f_in_pbuf->pubseekoff(0, f_in.end, f_in.in);
+    f_in.close();
+    return sbuff_size>>0x3;
 }

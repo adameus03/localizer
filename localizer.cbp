@@ -37,16 +37,20 @@
 		<Unit filename="functions.cpp" />
 		<Unit filename="functions.h" />
 		<Unit filename="include/DataSource.h" />
+		<Unit filename="include/Localizer.h" />
 		<Unit filename="include/NeuralNetwork.h" />
 		<Unit filename="include/NeuralNetworkTrainer.h" />
 		<Unit filename="include/Neuron.h" />
 		<Unit filename="include/Test.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/DataSource.cpp" />
+		<Unit filename="src/Localizer.cpp" />
 		<Unit filename="src/NeuralNetwork.cpp" />
 		<Unit filename="src/NeuralNetworkTrainer.cpp" />
 		<Unit filename="src/Neuron.cpp" />
 		<Unit filename="src/Test.cpp" />
+		<Unit filename="train_localizer.cpp" />
+		<Unit filename="train_localizer.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

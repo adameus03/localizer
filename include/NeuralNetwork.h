@@ -29,6 +29,7 @@ class NeuralNetwork
         void GetWeights(double* weights);
         void GetWorkspace(double* workspace);
         uint GetWorkspaceSize();
+        uint GetTotalNumWeights();
 
     protected:
 
