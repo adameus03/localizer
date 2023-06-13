@@ -7,14 +7,17 @@
 #include <cstring> //memcpy
 
 typedef unsigned char uchar;
+typedef unsigned long long ull;
 
 class Localizer
 {
     public:
-        Localizer();
+        Localizer(const char* weights_path);
         virtual ~Localizer();
         void CorrectLocation(double& x, double& y);
-        void LoadWeights();
+        void LoadWeights(const char* weights_path);
+
+        void BatchCorrectLocation(const char* input_path, const char* output_path);
 
     protected:
 

@@ -1,0 +1,619 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.7)  12 JUN 2023 07:00
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./sprawozdanie.tex
+(sprawozdanie.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-03-30> (classrep.cls
+Document Class: classrep 2009/11/27 ICS Class Assignment Report
+(C:\Users\amade\AppData\Local\Programs\MiKTeX\tex/latex/mwcls\mwart.cls
+Document Class: mwart 2017/05/13 v0.75 A LaTeX document class (MW)
+*** Beta version. Formatting may change
+*** in future versions of this class.
+(C:\Users\amade\AppData\Local\Programs\MiKTeX\tex/latex/mwcls\mw12.clo
+File: mw12.clo 2017/05/13 v0.75 A document class size option (MW)
+)
+\@parindent=\dimen140
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen141
+)
+(C:\Users\amade\AppData\Local\Programs\MiKTeX\tex/latex/polski\polski.sty
+Package: polski 2021/08/25 v1.3.6 Polish language package
+
+(C:\Users\amade\AppData\Local\Programs\MiKTeX\tex/latex/base\ot4enc.def
+File: ot4enc.def 2021/04/29 v2.0v Standard LaTeX file
+Now handling font encoding OT4 ...
+... no UTF-8 mapping file for font encoding OT4
+))
+(C:\Users\amade\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+))
+(C:\Users\amade\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+)
+(C:\Users\amade\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
+
+(C:\Users\amade\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+
+(C:\Users\amade\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+)
+(C:\Users\amade\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+) (C:\Users\amade\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+(C:\Users\amade\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+)
+(C:\Users\amade\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\amade\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(C:\Users\amade\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+)
+\Gin@req@height=\dimen142
+\Gin@req@width=\dimen143
+)
+(C:\Users\amade\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2022/04/08 v2.17n AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\amade\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(C:\Users\amade\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen144
+))
+(C:\Users\amade\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen145
+)
+(C:\Users\amade\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count193
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count194
+\leftroot@=\count195
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count196
+\DOTSCASE@=\count197
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen146
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count198
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count199
+\dotsspace@=\muskip17
+\c@parentequation=\count266
+\dspbrk@lvl=\count267
+\tag@help=\toks20
+\row@=\count268
+\column@=\count269
+\maxfields@=\count270
+\andhelp@=\toks21
+\eqnshift@=\dimen147
+\alignsep@=\dimen148
+\tagshift@=\dimen149
+\tagwidth@=\dimen150
+\totwidth@=\dimen151
+\lineht@=\dimen152
+\@envbody=\toks22
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(C:\Users\amade\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:\Users\amade\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+   defining Unicode char U+00A0 (decimal 160)
+LaTeX Font Info:    Trying to load font information for OT4+cmr on input line 2
+6.
+(C:\Users\amade\AppData\Local\Programs\MiKTeX\tex/latex/polski\ot4cmr.fd
+File: ot4cmr.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
+)
+(C:\Users\amade\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2023-03-30 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count271
+\l__pdf_internal_box=\box53
+) (sprawozdanie.aux
+
+LaTeX Warning: Label `l2short' multiply defined.
+
+)
+\openout1 = `sprawozdanie.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+
+(C:\Users\amade\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count272
+\scratchdimen=\dimen153
+\scratchbox=\box54
+\nofMPsegments=\count273
+\nofMParguments=\count274
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count275
+\MPscratchDim=\dimen154
+\MPnumerator=\count276
+\makeMPintoPDFobject=\count277
+\everyMPtoPDFconversion=\toks25
+)
+(C:\Users\amade\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\amade\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+
+ []
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
+
+(C:\Users\amade\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
+
+
+(C:\Users\amade\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+
+ []
+
+LaTeX Font Info:    Trying to load font information for OT4+cmtt on input line 
+27.
+(C:\Users\amade\AppData\Local\Programs\MiKTeX\tex/latex/polski\ot4cmtt.fd
+File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
+)
+<neural_biolo.jpg, id=1, 250.9375pt x 156.585pt>
+File: neural_biolo.jpg Graphic file (type jpg)
+<use neural_biolo.jpg>
+Package pdftex.def Info: neural_biolo.jpg  used on input line 40.
+(pdftex.def)             Requested size: 256.0748pt x 159.81015pt.
+<neuro_mat.png, id=2, 612.2875pt x 319.1925pt>
+File: neuro_mat.png Graphic file (type png)
+<use neuro_mat.png>
+Package pdftex.def Info: neuro_mat.png  used on input line 54.
+(pdftex.def)             Requested size: 426.79134pt x 222.48834pt.
+
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 54--55
+ [][] 
+ []
+
+[1
+
+{C:/Users/amade/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/amad
+e/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plrm.enc}] [2 <./neural_biol
+o.jpg> <./neuro_mat.png>] [3]
+<loca.png, id=31, 1607.00375pt x 1657.19125pt>
+File: loca.png Graphic file (type png)
+<use loca.png>
+Package pdftex.def Info: loca.png  used on input line 102.
+(pdftex.def)             Requested size: 426.79134pt x 440.11449pt.
+
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 102--103
+ [][] 
+ []
+
+<locapyth.png, id=32, 789.95125pt x 373.395pt>
+File: locapyth.png Graphic file (type png)
+<use locapyth.png>
+Package pdftex.def Info: locapyth.png  used on input line 111.
+(pdftex.def)             Requested size: 426.79134pt x 201.73854pt.
+
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 111--112
+ [][] 
+ []
+
+[4 <./loca.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 121--139
+\OT4/cmr/m/n/12 in[]data.py :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--139
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--139
+\OT4/cmr/m/n/12 ge-ne-ra-te[]train[]data()
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--139
+\OT4/cmr/m/n/12 ge-ne-ra-te[]validation[]set[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--139
+\OT4/cmr/m/n/12 ge-ne-ra-te[]validation[]set[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--139
+\OT4/cmr/m/n/12 ge-ne-ra-te[]validation[]set[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--139
+\OT4/cmr/m/n/12 ge-ne-ra-te[]validation[]set[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--139
+\OT4/cmr/m/n/12 ge-ne-ra-te[]validation[]set[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--139
+\OT4/cmr/m/n/12 ge-ne-ra-te[]validation[]set[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--139
+\OT4/cmr/m/n/12 ge-ne-ra-te[]validation[]set[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--139
+\OT4/cmr/m/n/12 ge-ne-ra-te[]validation[]set[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--139
+\OT4/cmr/m/n/12 ge-ne-ra-te[]validation[]set[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--139
+\OT4/cmr/m/n/12 ge-ne-ra-te[]validation[]set[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--139
+\OT4/cmr/m/n/12 generate[]validation[]set[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--139
+\OT4/cmr/m/n/12 ge-ne-ra-te[]validation[]set[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--139
+\OT4/cmr/m/n/12 ge-ne-ra-te[]validation[]set[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--139
+\OT4/cmr/m/n/12 ge-ne-ra-te[]validation[]set[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--139
+\OT4/cmr/m/n/12 generate[]validation[]set[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--139
+\OT4/cmr/m/n/12 generate[]validation[]set[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--139
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--142
+\OT4/cmr/m/n/12 we-ights):
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--142
+
+ []
+
+[5 <./locapyth.png>]
+Overfull \hbox (1.95427pt too wide) in paragraph at lines 143--146
+[]\OT4/cmr/m/n/12 Po za-ko«-cze-niu tre-no-wa-nia uru-cho-mie-nie pro-ce-su wy-
+ko-naw-cze-go sie-ci neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--146
+\OT4/cmr/m/n/12 ro-no-wej dla wy-bra-ne-go pli-ku z wa-ga-mi:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--146
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--165
+\OT4/cmr/m/n/12 moc-ni-cze-go skryp-tu vi-su-ali-ze.py:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--165
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--165
+\OT4/cmr/m/n/12 vi-su-al[]systems[]comparison[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--165
+\OT4/cmr/m/n/12 vi-su-al[]systems[]comparison[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--165
+\OT4/cmr/m/n/12 visual[]systems[]comparison[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--165
+\OT4/cmr/m/n/12 visual[]systems[]comparison[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--165
+\OT4/cmr/m/n/12 vi-su-al[]systems[]comparison[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--165
+\OT4/cmr/m/n/12 vi-su-al[]systems[]comparison[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--165
+\OT4/cmr/m/n/12 vi-su-al[]systems[]comparison[])
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--165
+\OT4/cmr/m/n/12 vi-su-al[]systems[]comparison[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--165
+\OT4/cmr/m/n/12 vi-su-al[]systems[]comparison[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--165
+\OT4/cmr/m/n/12 vi-su-al[]systems[]comparison[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--165
+\OT4/cmr/m/n/12 vi-su-al[]systems[]comparison[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--165
+\OT4/cmr/m/n/12 vi-su-al[]systems[]comparison[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--165
+\OT4/cmr/m/n/12 vi-su-al[]systems[]comparison[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--165
+\OT4/cmr/m/n/12 vi-su-al[]systems[]comparison[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--165
+\OT4/cmr/m/n/12 vi-su-al[]systems[]comparison[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--165
+\OT4/cmr/m/n/12 vi-su-al[]systems[]comparison[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--165
+
+ []
+
+<nn_set.png, id=41, 709.90219pt x 115.18031pt>
+File: nn_set.png Graphic file (type png)
+<use nn_set.png>
+Package pdftex.def Info: nn_set.png  used on input line 181.
+(pdftex.def)             Requested size: 426.79134pt x 69.24754pt.
+
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 181--182
+ [][] 
+ []
+
+
+Underfull \vbox (badness 1990) has occurred while \output is active []
+
+ [6 <./nn_set.png>]
+<comparison_f8_1z.png, id=45, 462.528pt x 346.896pt>
+File: comparison_f8_1z.png Graphic file (type png)
+<use comparison_f8_1z.png>
+Package pdftex.def Info: comparison_f8_1z.png  used on input line 213.
+(pdftex.def)             Requested size: 256.0748pt x 192.06375pt.
+<comparison_f8_2p.png, id=46, 462.528pt x 346.896pt>
+File: comparison_f8_2p.png Graphic file (type png)
+<use comparison_f8_2p.png>
+Package pdftex.def Info: comparison_f8_2p.png  used on input line 220.
+(pdftex.def)             Requested size: 256.0748pt x 192.06375pt.
+<comparison_f8_2z.png, id=47, 462.528pt x 346.896pt>
+File: comparison_f8_2z.png Graphic file (type png)
+<use comparison_f8_2z.png>
+Package pdftex.def Info: comparison_f8_2z.png  used on input line 227.
+(pdftex.def)             Requested size: 256.0748pt x 192.06375pt.
+<comparison_f8_3z.png, id=48, 462.528pt x 346.896pt>
+File: comparison_f8_3z.png Graphic file (type png)
+<use comparison_f8_3z.png>
+Package pdftex.def Info: comparison_f8_3z.png  used on input line 234.
+(pdftex.def)             Requested size: 256.0748pt x 192.06375pt.
+<comparison_f10_1p.png, id=49, 462.528pt x 346.896pt>
+File: comparison_f10_1p.png Graphic file (type png)
+<use comparison_f10_1p.png>
+Package pdftex.def Info: comparison_f10_1p.png  used on input line 241.
+(pdftex.def)             Requested size: 256.0748pt x 192.06375pt.
+<comparison_f10_1z.png, id=50, 462.528pt x 346.896pt>
+File: comparison_f10_1z.png Graphic file (type png)
+<use comparison_f10_1z.png>
+Package pdftex.def Info: comparison_f10_1z.png  used on input line 248.
+(pdftex.def)             Requested size: 256.0748pt x 192.06375pt.
+<comparison_f10_2p.png, id=51, 462.528pt x 346.896pt>
+File: comparison_f10_2p.png Graphic file (type png)
+<use comparison_f10_2p.png>
+Package pdftex.def Info: comparison_f10_2p.png  used on input line 255.
+(pdftex.def)             Requested size: 256.0748pt x 192.06375pt.
+<comparison_f10_2z.png, id=52, 462.528pt x 346.896pt>
+File: comparison_f10_2z.png Graphic file (type png)
+<use comparison_f10_2z.png>
+Package pdftex.def Info: comparison_f10_2z.png  used on input line 262.
+(pdftex.def)             Requested size: 256.0748pt x 192.06375pt.
+<comparison_f10_3p.png, id=53, 462.528pt x 346.896pt>
+File: comparison_f10_3p.png Graphic file (type png)
+<use comparison_f10_3p.png>
+Package pdftex.def Info: comparison_f10_3p.png  used on input line 269.
+(pdftex.def)             Requested size: 256.0748pt x 192.06375pt.
+<comparison_f10_3z.png, id=54, 462.528pt x 346.896pt>
+File: comparison_f10_3z.png Graphic file (type png)
+<use comparison_f10_3z.png>
+Package pdftex.def Info: comparison_f10_3z.png  used on input line 276.
+(pdftex.def)             Requested size: 256.0748pt x 192.06375pt.
+ [7] [8 <./comparison_f8_1z.png> <./comparison_f8_2p.png> <./comparison_f8_2z.p
+ng>] [9 <./comparison_f8_3z.png> <./comparison_f10_1p.png> <./comparison_f10_1z
+.png>] [10 <./comparison_f10_2p.png> <./comparison_f10_2z.png> <./comparison_f1
+0_3p.png>]
+Overfull \hbox (1.65843pt too wide) in paragraph at lines 300--301
+[]\OT4/cmr/m/n/12 Manipulowanie ar-chi-tek-tu-r¡ sie-ci, da-je szan-s¦ na dal-s
+ze zmniej-sza-nie funk-
+ []
+
+[11 <./comparison_f10_3z.png>] [12] (sprawozdanie.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 284 ({)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 3309 strings out of 476331
+ 51298 string characters out of 5787766
+ 1863660 words of memory out of 5000000
+ 23694 multiletter control sequences out of 15000+600000
+ 523173 words of font info for 66 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 58i,8n,71p,684b,336s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/amade/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmex10.pfb><C:/Users/amade/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/amade/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/amade/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/amade/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/amade/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/User
+s/amade/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><
+C:/Users/amade/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
+8.pfb><C:/Users/amade/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb><C:/Users/amade/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmsy6.pfb><C:/Users/amade/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmsy8.pfb><C:/Users/amade/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/amade/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/pl/plbx12.pfb><C:/Users/amade/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/pl/plr10.pfb><C:/Users/amade/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/pl/plr12.pfb><C:/Users/amade/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/pl/plr17.pfb><C:/Users/amade/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/pl/plsl10.pfb><C:/Users/amade/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/pl/plsl8.pfb>
+Output written on sprawozdanie.pdf (12 pages, 608925 bytes).
+PDF statistics:
+ 161 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+

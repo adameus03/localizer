@@ -45,7 +45,7 @@ void NeuralNetworkTrainer::RunTraining(const double& accuracy){
 
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 12);
         //std::cout << "\033[35;106m --- Epoch " << epoch_index++ << " ---\033[m" << std::endl;
-        ///std::cout << "--- Epoch " << epoch_index++ << " ---" << std::endl;
+        std::cout << "--- Epoch " << epoch_index++ << " ---" << std::endl;
         //getchar();
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10);
         std::cout << "adjustment_size = " << adjustment_size << std::endl;
